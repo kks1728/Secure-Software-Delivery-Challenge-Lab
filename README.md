@@ -68,7 +68,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 --role="roles/ondemandscanning.admin"
 ```
 
-OPEN EDITOR , Click the dropdown before ```sample-app``` and then open the ```cloudbuild.yaml``` and replace ```<image_name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-scanning-repo/sample-image ```
+OPEN EDITOR , Click the dropdown before ```sample-app``` and then open the ```cloudbuild.yaml``` and replace ```<image-name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-scanning-repo/sample-image ```
 SAVE the file either by ```Ctrl+S``` or ```File>Save``` and OPEN TERMINAL 
 
 
