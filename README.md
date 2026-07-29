@@ -55,16 +55,25 @@ gcloud auth configure-docker $REGION-docker.pkg.dev
 
 ## TASK 2 
 
+```
+SERVICE_ACCOUNT="$(gcloud storage service-agent --project=$PROJECT_ID)"
+```
+
+```
+echo $SERVICE_ACCOUNT
+```
+
+Copy the output of the above command and replace it with ```[GCS_PROJECT_NUMBER]``` in the next 2 commands
 
 ```
 gcloud projects add-iam-policy-binding $PROJECT_ID \
---member="serviceAccount:$PROJECT_NUMBER@cloudbuild.gserviceaaccount.com" \
+--member="serviceAccount:[GCS_PROJECT_NUMBER]" \
 --role="roles/iam.serviceAccountUser"
 ```
 
 ```
 gcloud projects add-iam-policy-binding $PROJECT_ID \
---member="serviceAccount:$PROJECT_NUMBER@cloudbuild.gserviceaaccount.com" \
+--member="serviceAccount:[GCS_PROJECT_NUMBER]" \
 --role="roles/ondemandscanning.admin"
 ```
 
