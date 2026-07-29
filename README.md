@@ -196,10 +196,10 @@ OPEN EDITOR & go to ```my_policy.yaml``` file in the ```sample-app``` and remove
 
 ```
 defaultAdmissionRule:
-enforcementMode: ENFORCED_BLOCK_AND_AUDIT_LOG
-evaluationMode: REQUIRE_ATTESTATION
-requireAttestationsBy:
-  - projects/[PROJECT_ID]/attestors/vulnerability-attestor
+  enforcementMode: ENFORCED_BLOCK_AND_AUDIT_LOG
+  evaluationMode: REQUIRE_ATTESTATION
+  requireAttestationsBy:
+    - projects/[PROJECT_ID]/attestors/vulnerability-attestor
 globalPolicyEvaluationMode: ENABLE
 name: projects/[PROJECT_ID]/policy
 ```
