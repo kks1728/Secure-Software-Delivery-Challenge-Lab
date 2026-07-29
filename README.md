@@ -118,7 +118,7 @@ ATTESTOR_ID=vulnerability-attestor
 ```
 gcloud container binauthz attestors create $ATTESTOR_ID \
 --attestation-authority-note=$NOTE_ID \
---attestation-authority-note-project=$PROJECT_ID \
+--attestation-authority-note-project=$PROJECT_ID 
 ```
 
 ```
