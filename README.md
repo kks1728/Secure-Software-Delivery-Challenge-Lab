@@ -36,14 +36,14 @@ gcloud storage cp gs://spls/gsp521/* .
 
 ```
 gcloud artifacts repositories create artifact-scanning-repo \
- --repository-format-docker \
+ --repository-format=docker \
  --location=$REGION \
  --description="Scanning repository"
 ```
 
  ```
 gcloud artifacts repositories create artifact-prod-repo \
- --repository-format-docker \
+ --repository-format=docker \
  --location=$REGION \
  --description="Production repository"
 ```
