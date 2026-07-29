@@ -240,7 +240,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
 ```
 gcloud projects add-iam-policy-binding $PROJECT_ID \
 --member serviceAccount:$PROJECT_NUMBER@cloudbuild.gserviceaccount.com \
---role roles/ondemandscanning.admin```
+--role roles/ondemandscanning.admin
 
 ```
 
