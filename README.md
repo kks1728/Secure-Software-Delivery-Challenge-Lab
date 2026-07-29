@@ -259,14 +259,7 @@ cd ../..
 rm -rf cloud-builders-community
 ```
 
-OPEN EDITOR & go to ```cloudbuild.yaml``` file in ```sample-app>cloud-builders-community``` and remove everything and paste the following in it and make the following changes using Find & Replace```(Ctrl+F)```:
-1. Replace ```<your-region>```with your region
-2. Replace ```<image-name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-scanning-repo/sample-image:latest ```
-3. Replace ```<production-image-name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-prod-repo/sample-image:latest ```
-4. Replace ```<attestor-name>``` with ``` projects/[PROJECT_ID]/attestors/vulnerability-attestor```
-5. Replace ```<key-version>``` with ```projects/[PROJECT_ID]/locations/global/keyRings/binauthz-keys/cryptoKeys/lab-key/cryptoKeyVersion/1```
-6. Replace ```<correct vulnerability>``` with ```CRITICAL```
-7. Replace ```[PROJECT_ID]``` with your Project ID everywhere in the lab wherever required
+OPEN EDITOR & go to ```cloudbuild.yaml``` file in ```sample-app``` and remove everything and paste the following in it,
 
 ```json
 steps:
@@ -346,6 +339,16 @@ steps:
 images:
   - <image-name>
 ```
+Now make the following changes using Find & Replace```(Ctrl+F)``` in the text you just pasted:
+1. Replace ```<your-region>```with your region
+2. Replace ```<image-name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-scanning-repo/sample-image:latest ```
+3. Replace ```<production-image-name>``` with ``` [YOUR_REGION]-docker.pkg.dev/[PROJECT_ID]/artifact-prod-repo/sample-image:latest ```
+4. Replace ```<attestor-name>``` with ``` projects/[PROJECT_ID]/attestors/vulnerability-attestor```
+5. Replace ```<key-version>``` with ```projects/[PROJECT_ID]/locations/global/keyRings/binauthz-keys/cryptoKeys/lab-key/cryptoKeyVersion/1```
+6. Replace ```<correct vulnerability>``` with ```CRITICAL```
+7. Replace ```[PROJECT_ID]``` with your Project ID everywhere in the lab wherever required
+
+
 
 SAVE FILE & OPEN TERMINAL 
 
