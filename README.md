@@ -390,7 +390,9 @@ gcloud builds submit
 Replace ```<your-region>``` with your region and paste the following command in the Cloud Shell 
 
 
-```gcloud beta run services add-iam-policy-binding --region=<your-region> --member=allUsers --role=roles/run.invoker auth-service```
+```
+gcloud beta run services add-iam-policy-binding --region=<your-region> --member=allUsers --role=roles/run.invoker auth-service
+```
 
 
 
