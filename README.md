@@ -163,7 +163,7 @@ curl -X POST \
 ```
 KEY_LOCATION=global
 KEYRING=binauthz-keys
-KEYNAME=lab-key
+KEY_NAME=lab-key
 ```
 
 ```
