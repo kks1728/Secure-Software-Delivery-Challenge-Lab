@@ -363,6 +363,8 @@ gcloud builds submit
 
 OPEN EDITOR and open the ```Dockerfile``` in the ```sample-app```
 
+Replace everything in the ```Dockerfile```  with the following 
+
 ```json
 FROM python:3.8-alpine
 
@@ -385,7 +387,9 @@ SAVE FILE & OPEN TERMINAL
 gcloud builds submit
 ```
 
-Replace ```<your-region>``` with your region and paste this command in the Cloud Shell 
+Replace ```<your-region>``` with your region and paste the following command in the Cloud Shell 
+
+
 ```gcloud beta run services add-iam-policy-binding --region=<your-region> --member=allUsers --role=roles/run.invoker auth-service```
 
 
