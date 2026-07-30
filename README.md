@@ -270,7 +270,7 @@ rm -rf cloud-builders-community
 
 OPEN EDITOR & go to ```cloudbuild.yaml``` file in ```sample-app``` and remove everything and paste the following in it,
 
-```json
+```yaml
 steps:
 
 # TODO: #1. Build Step. Replace the <image-name> placeholder with the correct value.
@@ -374,7 +374,7 @@ OPEN EDITOR and open the ```Dockerfile``` in the ```sample-app```
 
 Replace everything in the ```Dockerfile```  with the following 
 
-```json
+```dockerfile
 FROM python:3.8-alpine
 
 # App
